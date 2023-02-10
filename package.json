@@ -1,0 +1,28 @@
+{
+  "name": "MAILSENDCRONJOBS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src",
+    "start": "node dist/app.js",
+    "dev": "concurrently \"tsup src --watch\" \"nodemon src/app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "tsup": "^6.6.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "dayjs-plugin-utc": "^0.1.2",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2",
+    "nodecron": "^0.2.0",
+    "nodemailer": "^6.9.1"
+  }
+}
